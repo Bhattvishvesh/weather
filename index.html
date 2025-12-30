@@ -10,31 +10,31 @@
       
 </head>
 
-<body style=" background: url('cloud.jpg'); background-repeat: no-repeat; background-size: 100%; ">
+<body style=" background: url('cloud.jpg'); background-repeat: no-repeat; background-size: 100%; flex-wrap:wrap; background-size: cover;min-height: 100vh; " >
         
-    <header  class="container-fluid d-flex justify-content-between text-dark ">
-        <h3>Havaman</h3>
-        <div class=" rounded rounded-3  w-25 px-2 py-3 text-light ">
+    <header  class="container-fluid d-flex flex-wrap justify-content-between text-dark align-items-center text-dark px-3">
+        <h3 class="w-md-100 w-md-auto text-center text-ms-start">Havaman</h3>
+        <div class=" rounded rounded-3  w-md-25 w-lg-75 px-2 py-3 text-light ">
             <div class="input-group rounded rounded-3">
                 <input id="search" style="background-color: #283039;" type="text" placeholder="Search city"
-                    class="px-3 py-2 bg-transparent ">
+                    class="px-3 py-2 bg-transparent form-control ">
                 <button class="btn btn-primary text-light" onclick="Temp()">search </button>
             </div>
 
         </div>
-        <div class="d-flex align-items-center"> <button
+        <div class="d-flex align-items-center  w-md-auto justify-content-center justify-content-md-end mt-2 mt-md-0"> <button
                 class="bg-primary rounded rounded-4  text-light me-4 py-1 px-1 p-3 fw-bolder w-75 ">Sign In</button>
         </div>
 
     </header>
 
     <div class="d-flex justify-content-center ">
-        <div class="card  mt-3 w-75 text-light bg-transparent ">
+        <div class="card  mt-3 w-75 text-light bg-transparent  ">
             <div class="card-header ">
                 <h2 id="cityName"></h2> 
                 <p id="country"></p>
                 
-                <div class="card-body  d-flex justify-content-end">
+                <div class="card-body   d-flex justify-content-end justify-content-between-md align-items-center">
                     <h1 id="temp" class="w-100"></h1>
                     <img src="sun.png" alt="" class="w-25 rounded rounded-2">
                 </div>
@@ -43,7 +43,7 @@
     </div>
 
 
-    <div class=" d-flex mt-4 justify-content-around w-100 ">
+    <div class=" d-flex  flex-wrap mt-4 justify-content-around w-100  ">
         <div class="card px-3 py-2 rounded rounded-5 bg-transparent ">
             <div class="card-header text-light">
                 <p>wind speed</p>
@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <div class="card px-3 py-2 rounded rounded-5 bg-transparent">
+        <div class="card px-3 py-2 column-md-gap-2 flex-wrap rounded rounded-5 bg-transparent ">
             <div class="card-header text-light ">
                 <p>cloud</p>
                 <div class="card-body">
@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <div class="card px-3 py-2 rounded rounded-5 bg-transparent">
+        <div class="card px-3 py-2   column-md-gap-2 flex-wrap rounded rounded-5 bg-transparent ">
             <div class="card-header text-light ">
                 <p>visibility</p>
                 <div class="card-body">
@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <div class="card px-3 py-2 rounded rounded-5 bg-transparent">
+        <div class="card px-3 py-2   column-md-gap-2 flex-wrap rounded rounded-5 bg-transparent ">
             <div class="card-header text-light ">
                 <p>sea</p>
                 <div class="card-body">
@@ -80,7 +80,7 @@
             </div>
         </div>
 
-        <div class="card px-3 py-2 rounded rounded-5  bg-transparent">
+        <div class="card px-3 py-2  column-md-gap-2 flex-wrap rounded rounded-5  bg-transparent ">
             <div class="card-header text-light">
                 <p>feel like</p>
                 <div class="card-body">
